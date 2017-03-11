@@ -5,7 +5,7 @@ package ecommerce.Model.Accessormethod;
 public class Carrinho {
     private Integer cod_carrinho; 
     private Integer cod_produto;
-    private Integer quantidade_por_produto;
+    private Integer qtde_produto;
     private float subtotal;
 
     public Integer getCod_carrinho() {
@@ -24,12 +24,12 @@ public class Carrinho {
         this.cod_produto = cod_produto;
     }
 
-    public Integer getQuantidade_por_produto() {
-        return quantidade_por_produto;
+    public Integer getQtde_produto() {
+        return qtde_produto;
     }
 
-    public void setQuantidade_por_produto(Integer quantidade_por_produto) {
-        this.quantidade_por_produto = quantidade_por_produto;
+    public void setQtde_produto(Integer qtde_produto) {
+        this.qtde_produto = qtde_produto;
     }
 
     public float getSubtotal() {

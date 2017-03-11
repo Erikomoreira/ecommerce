@@ -2,9 +2,9 @@
 package ecommerce.Model.Accessormethod;
 
 /* @author sibele */
-public class FormasDePagamento {
+public class Pagamento {
    private Integer cod_pagamento; 
-   private String nome_pagamento;
+   private String forma_pagamento;
 
     public Integer getCod_pagamento() {
         return cod_pagamento;
@@ -14,12 +14,12 @@ public class FormasDePagamento {
         this.cod_pagamento = cod_pagamento;
     }
 
-    public String getNome_pagamento() {
-        return nome_pagamento;
+    public String getForma_pagamento() {
+        return  forma_pagamento;
     }
 
-    public void setNome_pagamento(String nome_pagamento) {
-        this.nome_pagamento = nome_pagamento;
+    public void setForma_pagamento(String  forma_pagamento) {
+        this. forma_pagamento =  forma_pagamento;
     }
    
    

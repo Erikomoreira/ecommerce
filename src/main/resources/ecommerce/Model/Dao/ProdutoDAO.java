@@ -12,14 +12,14 @@ public class ProdutoDAO extends GenericaDAO {
     public void CadastrarProduto(Produto produto) throws SQLException {
         String query = "INSERT INTO Produto(cod_categoria,nome_produto,valor_produto,descricao_produto,caracteristica_produto,data_inclusao,quantidade_produto) "
                 + "VALUES(?,?,?,?,?,?,?)";
-        insert(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto(), produto.getCaracteristicas_produto(), produto.getData_inclusao(), produto.getQuantidade_produto());
+        insert(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto(), produto.getData_inclusao(), produto.getQtde_produto());
 // Ver questão da inclusão de quantidade.       
     }
 
     // Exclui o produto
     public void ExclusaoDeCadastroProduto(Produto produto, String codigo_produto) throws SQLException {
         String query = "DELETE * FROM PRODUTO WHERE COD_PRODUTO = " + codigo_produto;
-        delete(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto(), produto.getCaracteristicas_produto(), produto.getData_inclusao(), produto.getQuantidade_produto());
+        delete(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto(), produto.getData_inclusao(), produto.getQtde_produto());
     }
 
     //Editar os dados do produto no banco
@@ -30,7 +30,7 @@ public class ProdutoDAO extends GenericaDAO {
                 + "WHERE VERIFICAR QUAL SERA A CONDIÇÃO = ?";
 
         //Verificar a condição e o problema da quantidade
-        update(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto(), produto.getCaracteristicas_produto());
+        update(query, produto.getCod_categoria(), produto.getNome_produto(), produto.getValor_produto(), produto.getDescricao_produto());
 
     }
 

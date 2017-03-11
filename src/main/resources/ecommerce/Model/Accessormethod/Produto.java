@@ -8,10 +8,9 @@ public class Produto {
     private Integer cod_produto;
     private Integer cod_categoria; //Atributo estrangeiro
     private String nome_produto;
-    private Integer quantidade_produto;
+    private Integer qtde_produto;
     private float valor_produto;
     private String descricao_produto;
-    private String caracteristicas_produto;
     private Timestamp data_inclusao;
 
     public Timestamp getData_inclusao() {
@@ -46,12 +45,12 @@ public class Produto {
         this.nome_produto = nome_produto;
     }
 
-    public Integer getQuantidade_produto() {
-        return quantidade_produto;
+    public Integer getQtde_produto() {
+        return qtde_produto;
     }
 
-    public void setQuantidade_produto(Integer quantidade_produto) {
-        this.quantidade_produto = quantidade_produto;
+    public void setqtde_produto(Integer qtde_produto) {
+        this.qtde_produto = qtde_produto;
     }
 
     public float getValor_produto() {
@@ -68,14 +67,6 @@ public class Produto {
 
     public void setDescricao_produto(String descricao_produto) {
         this.descricao_produto = descricao_produto;
-    }
-
-    public String getCaracteristicas_produto() {
-        return caracteristicas_produto;
-    }
-
-    public void setCaracteristicas_produto(String caracteristicas_produto) {
-        this.caracteristicas_produto = caracteristicas_produto;
     }
 
 }
