@@ -1,30 +1,22 @@
 package ecommerce.Model.Dao;
 
-import ecommerce.Model.Accessormethod.Cliente;
+import ecommerce.Model.Bean.Cliente;
 import java.sql.SQLException;
 
-/* @author sibele */
-public class ClienteDAO extends GenericaDAO {
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author sibele.nsantos
+ */
+public interface ClienteDAO {
 
-    //Insere os dados do cliente no banco
-    public void CadastrarCliente(Cliente cliente) throws SQLException {
-        String query = "INSERT INTO cliente(nome ,cpf,data_nascimento, sexo,cep,rua,numero,bairro,cidade,estado,telefone_residencial,celular,email,senha) "
-                + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
-        insert(query, cliente.getNome(), cliente.getCpf(), cliente.getData_nascimento(), cliente.getSexo(), cliente.getCep(), cliente.getRua(), cliente.getNumero(), cliente.getBairro(), cliente.getCidade(), cliente.getEstado(), cliente.getTelefone_residencial(), cliente.getCelular(), cliente.getEmail(), cliente.getSenha());
-    }
+    public void CadastrarCliente(Cliente cliente) throws SQLException;
 
-    //Editar os dados do cliente no banco
-    public void EditarCadastroCliente(Cliente cliente) throws SQLException {
-        String query = "UPDATE cliente "
-                + "SET nome = ?, data_nascimento = ?,sexo = ?, cep = ?,rua = ?,numero = ?,bairro = ?,cidade = ?, estado = ?, "
-                + "telefone_residencial = ?,celular = ?,email = ?, senha = ? "
-                + "WHERE cpf = ?";
-        update(query, cliente.getNome(), cliente.getCpf(), cliente.getData_nascimento(), cliente.getSexo(), cliente.getCep(), cliente.getRua(), cliente.getNumero(), cliente.getBairro(), cliente.getCidade(), cliente.getEstado(), cliente.getTelefone_residencial(), cliente.getCelular(), cliente.getEmail(), cliente.getSenha());
-    }
+    public void EditarCadastroCliente(Cliente cliente) throws SQLException;
 
-    //Pela regra de negocio, o cliente tem o direito de excluir seu cadastro, se informar seu CPF e Senha de acesso corretamente
-    public void ExclusaoDeCadastroCliente(Cliente cliente, String cpf_cliente, String senha) throws SQLException {
-        String query = "DELETE * FROM CLIENTE WHERE COD_CLIENTE = " + cpf_cliente + " and SENHA = " + senha;
-        delete(query, cliente.getNome(), cliente.getCpf(), cliente.getData_nascimento(), cliente.getSexo(), cliente.getCep(), cliente.getRua(), cliente.getNumero(), cliente.getBairro(), cliente.getCidade(), cliente.getEstado(), cliente.getTelefone_residencial(), cliente.getCelular(), cliente.getEmail(), cliente.getSenha());
-    }
+    public void ExclusaoDeCadastroCliente(Cliente cliente, String cpf_cliente, String senha) throws SQLException;
 }

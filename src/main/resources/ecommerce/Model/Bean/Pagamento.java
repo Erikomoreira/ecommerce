@@ -1,5 +1,5 @@
 
-package ecommerce.Model.Accessormethod;
+package ecommerce.Model.Bean;
 
 /* @author sibele */
 public class Pagamento {

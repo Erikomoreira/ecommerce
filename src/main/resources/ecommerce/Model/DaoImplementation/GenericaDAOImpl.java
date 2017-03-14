@@ -1,4 +1,4 @@
-package ecommerce.Model.Dao;
+package ecommerce.Model.DaoImplementation;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,11 +15,11 @@ import java.sql.SQLException;
 
    
 
-public abstract class GenericaDAO {
+public abstract class GenericaDAOImpl {
     private final Connection connection;
 
-    protected GenericaDAO() {
-        this.connection = ConexaoBD.getConnection();
+    protected GenericaDAOImpl() {
+        this.connection = ConexaoBDImpl.getConnection();
     }
 
     protected Connection getConnection() {

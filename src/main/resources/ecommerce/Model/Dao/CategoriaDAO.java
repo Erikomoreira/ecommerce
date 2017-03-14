@@ -1,9 +1,16 @@
 package ecommerce.Model.Dao;
 
+import ecommerce.Model.Bean.Categoria;
+import java.sql.SQLException;
 
 
-/*  @author sibele */
-public class CategoriaDAO {
+/**
+ *
+ * @author sibele.nsantos
+ */
+public interface CategoriaDAO {
 
-// A fazer
+    public void CadastrarNovaCategoria(Categoria categoria) throws SQLException;
+
+    public void EditarCadastroCategoria(Categoria categoria) throws SQLException;
 }

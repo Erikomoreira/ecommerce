@@ -1,4 +1,4 @@
-package ecommerce.Model.Dao;
+package ecommerce.Model.DaoImplementation;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 
 /* @author sibele */
-public class ConexaoBD {
+public class ConexaoBDImpl {
 
     private static final String SERVIDOR = "";//caminho do servidor do BD
     private static final String BANCO = "ecommerce"; //nome do banco de dados

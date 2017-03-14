@@ -1,4 +1,4 @@
-package ecommerce.Model.Accessormethod;
+package ecommerce.Model.Bean;
 
 import java.util.Date;
 
