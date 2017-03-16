@@ -1,11 +1,6 @@
-#main {
-  margin-top: 50px;
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300);
+@import url(http://fonts.googleapis.com/css?family=Playball);
 
-
-
-
-/*-- CSS RESPONSAVEL PELA HOME E SOBREEMPRESA */
 body, html{
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -61,7 +56,7 @@ a:focus{
 
 /* Home Style */
 #tf-home{
-	background: url(C:\Users\sibele.nsantos\Documents\NetBeansProjects\ecommerce\ecommerce\img\coffee.gif);
+	background: black;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
