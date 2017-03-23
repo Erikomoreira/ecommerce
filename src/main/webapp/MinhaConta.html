@@ -83,11 +83,13 @@
             <div class="row">
 
                 <!-- Logar na conta do e-commerce -->
-                <div class="col-md-6">
-                    <label for="LogarContaCliente">Ja possui conta na Canecaria ?</label> 
+                <div class="col-md-5">
+                    <h2>Já tem cadastro na loja?</h2> 
+					 
 					
 					<!-- Espaço entre um  label e input -->
                         <div class="space"></div>
+						<h5>Caso você já tenha seu cadastro na loja, informe seu email e sua senha de acesso à loja.</h5>
 					
                     <div class="row">
                         <div class="col-md-9">
@@ -106,27 +108,32 @@
 						
 						<div class="form-group col-md-9">
 						 <button class="btn btn-primary btn-lg btn-block" type="submit">Logar</button>
+						 <button class="btn btn-info btn-lg btn-block" type="submit">Esqueci minha senha</button>
 						</div>
                     </div>
                 </div>
+				
+<div class="col-md-1">
 
+</div>
 
                 <!-- Criar conta no e-commerce -->
-                <div class="col-md-6">
-                    <label for="CadastrarContaCliente">Ainda não possui conta na Canecaria?</label>
+                <div class="col-md-5">
+                     <h2>Criar novo cadastro</h2>
                     <form action="Produtos.html">
 					<!-- Espaço entre label e input -->
                         <div class="space"></div>
+						<h5>Use o formulário abaixo para cadastrar-se na loja. É rápido e fácil.</h5>
                         <div class="row">
 						
                             <div class="form-group col-md-7">
                                 <label for="NomeCompleto">Nome completo</label>
-                                <input type="name" class="form-control" id="NomeInput" placeholder="Digite seu nome">
+                                <input type="name" class="form-control" id="NomeInput" >
                             </div>
 							
                             <div class="form-group col-md-7">
                                 <label for="cpf">CPF</label>
-                                <input type="text" class="form-control" id="CPFInput" placeholder="Digite o CPF">
+                                <input type="number" class="form-control" id="CPFInput" placeholder="Ex:00000000000">
                             </div>
 							
                             <div class="form-group col-md-6">
@@ -145,11 +152,11 @@
                            
                             <div class="form-group col-md-6">
                                 <label for="Cep">Cep</label>
-                                <input type="number" class="form-control" id="CepInput" placeholder="Digite seu cep">
+                                <input type="number" class="form-control" id="CepInput" >
                             </div>
                             <div class="form-group col-md-8">
                                 <label for="Rua">Rua</label>
-                                <input type="text" class="form-control" id="RuaInput" placeholder="Insira sua rua">
+                                <input type="text" class="form-control" id="RuaInput" >
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="NumeroComplemento">Numero/Complemento</label>
@@ -160,15 +167,15 @@
                         <div class="row">
                             <div class="form-group col-md-4">
                                 <label for="Bairro">Bairro</label>
-                                <input type="text" class="form-control" id="BairroInput" placeholder="Seu bairro">
+                                <input type="text" class="form-control" id="BairroInput" >
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="Cidade">Cidade</label>
-                                <input type="text" class="form-control" id="CidadeInput" placeholder="Sua cidade">
+                                <input type="text" class="form-control" id="CidadeInput" >
                             </div>
 							 <div class="form-group col-md-2">
                                 <label for="UF">uf</label>
-                                <input type="text" class="form-control" id="UFInput" placeholder="UF">
+                                <input type="text" class="form-control" id="UFInput" >
                             </div>
                         </div>
 
@@ -195,7 +202,7 @@
 						
                             <div class="form-group col-md-6">
                                 <label for="exampleInputEmail1">Senha</label>
-                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Escolha sua senha">
+                                <input type="password" class="form-control" id="exampleInputEmail1" >
                             </div>
 
                         </div>
@@ -203,12 +210,12 @@
                         <hr />
 
                         <div class="row">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn-Finalizar" >Finalizar cadastro</button>
-								<button type="" class="btn-Limpar" >Limpar tudo</button>
-							
-                               
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar cadastro</button>
                             </div>
+							 <div class="col-md-6">
+							<button class="btn btn-info btn-lg btn-block" id="botaoLimpar"type="reset">Limpar tudo</button>
+							 </div>
                         </div>
 
                     </form>
