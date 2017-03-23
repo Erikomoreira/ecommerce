@@ -496,4 +496,25 @@ nav#tf-footer {
 
 
 
+/*CSS FEITO DIA 22/03*/
+
+#botaoLimpar{
+    background: #CC0000;
+}
+
+h5{
+    color: rgb(47, 147, 123);
+}
+
+hr.style4 {
+    border-top: 1px dotted #8c8b8b;
+}
+
+.nav-sidebar{
+	border-radius:10px;
+	background :rgba(47, 147, 123, 0.7);
+    color: black;
+}
+
+/*CSS FEITO DIA 23/03*/
 
